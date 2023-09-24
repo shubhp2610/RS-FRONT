@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+
+.searchField {
+    :global(.ant-input-affix-wrapper) {
+        padding: 0px;
+        border-color: $border-color;
+        height: 38px;
+        &:focus {
+            box-shadow: unset !important;
+        }
+        &:hover {
+            border-color: $border-color;
+        }
+        input {
+            width: 100%;
+            padding: 3px 8px;
+            // border-radius: 0px;
+            padding-right: 0px;
+            font-size: 14px;
+        }
+        :global(.ant-input-prefix) {
+            margin: 0px;
+            padding: 3px 5px;
+            svg {
+                fill: $border-color;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    }
+    :global(.ant-input-affix-wrapper-focused) {
+        box-shadow: unset !important;
+    }
+}
