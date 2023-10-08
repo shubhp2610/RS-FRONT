@@ -11,61 +11,53 @@ export const Header = () => {
 
     const headerMenu = [
         {
+            label: "Home",
+            url: "/",
+        },
+        {
+            label: "Land",
+            url: "/land",
+        },
+        {
+            label: "Commercial",
+            url: "/commercial",
+        },
+        {
+            label: "Residential",
+            url: "/residential",
+        },
+        {
+            label: "Locations",
+            url: "/locations",
+        },
+        {
             label: "About",
-            url: "/#about",
+            url: "/about",
         },
         {
-            label: "Process",
-            url: "/#process",
-        },
-        {
-            label: "Services",
-            url: "/#services",
-        },
-        {
-            label: "Industries",
-            url: "/#industries",
-        },
-        {
-            label: "Our Work",
-            url: "/#ourWork",
-        },
-        {
-            label: "Technology",
-            url: "/#technology",
-        },
-        {
-            label: "Statistics",
-            url: "/#statistics",
-        },
-        {
-            label: "Business Modal",
-            url: "/#businessModal",
-        },
-        {
-            label: "Testimonials",
-            url: "/#testimonials",
+            label: "Contact",
+            url: "/contact",
         },
     ];
 
     return (
         <>
-            <header className="sticky top-0 z-10 overflow-hidden">
+            <header className="sticky top-0 z-10 overflow-hidden shadow-[0_3px_11px_0px_rgba(0,0,0,0.25)] bg-white/70">
                 <div className="backdrop-blur-md inset-x-0 bottom-[-50%] top-[-1px] absolute"></div>
                 <nav className="relative">
-                    <div className="container mx-auto px-6 lg:px-10 2xl:px-32 flex items-center justify-between py-4">
-                        <Link href="#" className="flex items-center">
+                    <div className="container mx-auto px-6 lg:px-10 2xl:px-32 flex items-center justify-between py-2">
+                        <Link href="#">
                             <Image
                                 src="/logo.svg"
-                                width={152}
-                                height={31}
+                                width={153}
+                                height={76}
                                 alt="Logo"
                             />
                         </Link>
                         <button
                             data-collapse-toggle="navbar-default"
                             type="button"
-                            className="lg:hidden"
+                            className="lg:hidden border p-2 rounded-md border-grey-600"
                             aria-controls="navbar-default"
                             aria-expanded="false"
                             onClick={() => setCollapsed(true)}
@@ -83,7 +75,7 @@ export const Header = () => {
                                             key={menu.label}
                                             className="cursor-pointer hover:bg-primary/[0.18] px-3 py-1 h-fit hover:rounded-md"
                                         >
-                                            <span className="font-normal text-sm">
+                                            <span className="font-medium text-base">
                                                 {menu.label}
                                             </span>
                                         </li>
@@ -117,13 +109,13 @@ export const Header = () => {
                                         : "visible"
                                 }`}
                             >
-                                <div className="h-full overflow-y-scroll bg-[#0B0B22] shadow-xl">
+                                <div className="h-full overflow-y-scroll bg-white shadow-xl">
                                     <div className="overflow-y-auto py-6">
                                         <div className="flex items-center justify-between px-4">
                                             <Image
                                                 src="/logo.svg"
-                                                width={152}
-                                                height={31}
+                                                width={92}
+                                                height={46}
                                                 alt="Logo"
                                             />
                                             <button
@@ -131,13 +123,13 @@ export const Header = () => {
                                                 onClick={() =>
                                                     setCollapsed(false)
                                                 }
-                                                className="p-2 border border-white/50 rounded-full"
+                                                className="p-2 border border-black/50 rounded-full"
                                             >
                                                 <svg
                                                     className="h-6 w-6"
                                                     fill="none"
                                                     viewBox="0 0 24 24"
-                                                    stroke-width="1.5"
+                                                    strokeWidth="1.5"
                                                     stroke="currentColor"
                                                     aria-hidden="true"
                                                 >
@@ -156,7 +148,7 @@ export const Header = () => {
                                                     return (
                                                         <li
                                                             key={menu.label}
-                                                            className="cursor-pointer hover:bg-primary/[0.18] px-4 py-2 border-b border-white/5"
+                                                            className="cursor-pointer hover:bg-primary/[0.18] px-4 py-2 border-b border-black/5"
                                                         >
                                                             <span
                                                                 onClick={() => {

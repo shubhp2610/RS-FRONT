@@ -18,6 +18,9 @@ let nextConfig = {
     },
     poweredByHeader: false,
     future: {},
+    images: {
+        domains: ["mdbcdn.b-cdn.net"], // Add your image domains here
+    },
     webpack(config, { isServer }) {
         // if (isServer) {
         //     generateRobotsTxt();
@@ -51,7 +54,7 @@ const plugins = [
             lessLoaderOptions: {
                 lessOptions: {
                     modifyVars: {
-                        "primary-color": "#146EB4",
+                        "primary-color": "#CB0000",
                         "link-color": "#146EB4",
                         "success-color": "#6DB324",
                         "warning-color": "#F26B1D",

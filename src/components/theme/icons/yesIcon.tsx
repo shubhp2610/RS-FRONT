@@ -21,7 +21,7 @@ export const YesIcon = (props: React.SVGProps<SVGSVGElement>) => {
                     transform="translate(374.5 164)"
                     fill="none"
                     stroke="#2cbb52"
-                    stroke-width="1"
+                    strokeWidth="1"
                     stroke-dasharray="4"
                 />
                 <line
@@ -31,7 +31,7 @@ export const YesIcon = (props: React.SVGProps<SVGSVGElement>) => {
                     transform="translate(374.5 164.5)"
                     fill="none"
                     stroke="#2cbb52"
-                    stroke-width="1"
+                    strokeWidth="1"
                     stroke-dasharray="4"
                 />
                 <g
